@@ -11,7 +11,7 @@ import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <BrowserRouter>
-    <React.StrictMode>
+    
       <Provider store={store}>
         <Routes>
           <Route path='/' element={<App />}>
@@ -26,6 +26,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           </Route>
         </Routes>
       </Provider>
-    </React.StrictMode>
+    
   </BrowserRouter>
 )
