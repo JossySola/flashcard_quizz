@@ -8,26 +8,26 @@ export default function App() {
       <nav>
         <ul>
           <li><NavLink
-          style={({isActive}) => {
+          style={({ isActive }) => {
             return {
-              blackgroundColor: isActive ? "#9830f9" : ""
-            }
+              backgroundColor: isActive ? "#9830f9" : "",
+            };
           }}
           to='topics'>Topics</NavLink></li>
 
           <li><NavLink
-          style={({isActive}) => {
+          style={({ isActive }) => {
             return {
-              blackgroundColor: isActive ? "#9830f9" : ""
-            }
+              backgroundColor: isActive ? "#9830f9" : "",
+            };
           }}
           to='quizzes'>Quizzes</NavLink></li>
 
           <li><NavLink
-          style={({isActive}) => {
+          style={({ isActive }) => {
             return {
-              blackgroundColor: isActive ? "#9830f9" : ""
-            }
+              backgroundColor: isActive ? "#9830f9" : "",
+            };
           }}
           to='quizzes/new'>New Quizz</NavLink></li>
         </ul>
