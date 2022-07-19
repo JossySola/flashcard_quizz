@@ -5,6 +5,10 @@ import {Routes, Route, BrowserRouter } from 'react-router-dom'
 import App from './App'
 import { store } from './store'
 import { Topics } from './containers/topics'
+import { Quizzes } from './containers/quizzes'
+import { TopicForm } from './containers/components/topicForm'
+import { Quizz } from './containers/components/quizz'
+import { QuizzForm } from './containers/components/quizzForm'
 import './index.css'
 
 
@@ -15,13 +19,12 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Provider store={store}>
         <Routes>
           <Route path='/' element={<App />}>
-            <Route path=':topics' element={<Topics />}>
-              <Route path=':topicId'/>
-              <Route path='new'/>
+            <Route path='topics' element={<Topics />}>
+              <Route path='new' element={<TopicForm />}/>
             </Route>
-            <Route path=':quizzes'>
-              <Route path=':quizzId'/>
-              <Route path='new'/>
+            <Route path='quizzes' element={<Quizzes />}>
+              <Route path=':quizzId' element={<Quizz />}/>
+              <Route path='new' element={<QuizzForm />}/>
             </Route>
           </Route>
         </Routes>

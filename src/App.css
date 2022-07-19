@@ -39,6 +39,7 @@ ul li a:hover {
     border: 3px solid #f6de07;
     border-radius: 5px;
     color: black;
+    font-weight: bold;
     padding: 0.7rem;
     text-decoration: none;
 }

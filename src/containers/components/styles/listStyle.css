@@ -2,21 +2,59 @@
     background-color: #f6f6f6;
     width: 100%;
     margin: 0.5rem 0;
+    display: grid;
+    grid-template:
+    "left right";
 }
 .listItem h3, p, a {
     text-align: left;
     margin: 0;
     display: inline-block;
+    grid-area: left;
+}
+.listItem button {
+    grid-area: right;
+    display: flex;
+    align-self: center;
+    justify-self: right;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    background-color: #c5c3c3;
+    border: transparent;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-right: 1rem;
+
 }
 .listItem h3 {
-    color: #545454;
+    color: blueviolet;
     font-size: 1em;
     display: block;
 }
+.listItem h4 {
+    color: blueviolet;
+    font-size: 0.8em;
+    font-weight:300;
+    display: block;
+}
+.listItem h5 {
+    color: #545454;
+    font-size: 0.7em;
+    font-weight:300;
+    display: block;
+    margin: 0;
+}
 .listItem p {
     color: #8a8989;
-    font-size: 0.7em;
+    font-size: 0.6em;
     font-style: italic;
+}
+.listItem span {
+    font-weight: bold;
 }
 .listItem a {
     width: 100%;

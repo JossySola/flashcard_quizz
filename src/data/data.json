@@ -5,8 +5,8 @@
         {"id": "003", "name": "React-Redux", "author": "Jossy Solá"}
     ],
     "quizzes": [
-        {"id": "010", "topicId": "001", "author": "Jossy Solá"},
-        {"id": "020", "topicId": "002", "author": "Jossy Solá"},
-        {"id": "030", "topicId": "003", "author": "Jossy Solá"}
+        {"id": "010", "topicId": "001", "name": "Function Components", "author": "Jossy Solá"},
+        {"id": "020", "topicId": "002", "name": "Data Flow", "author": "Jossy Solá"},
+        {"id": "030", "topicId": "003", "name": "Hooks", "author": "Jossy Solá"}
     ]
 }

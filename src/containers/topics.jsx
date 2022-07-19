@@ -8,11 +8,11 @@ export function Topics() {
     return (
         <div>
             <h1>Topics</h1>
+            <Outlet />
             <div className="button">
                 <Link to='/topics/new'>New Topic</Link>
             </div>
-            <List />
-            <Outlet />
+            <List from='topics'/>
         </div>
     )
 }
