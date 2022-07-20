@@ -7,10 +7,10 @@ export function Quizzes() {
     return (
         <div>
             <h1>Quizzes</h1>
-            <Outlet />
             <div className="button">
                 <Link to='/quizzes/new'>New Quizz</Link>
             </div>
+            <Outlet />
             <List from='quizzes'/>
         </div>
     )

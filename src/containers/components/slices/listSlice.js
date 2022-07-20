@@ -73,6 +73,13 @@ export const isLoading = (state) => {
 export const isFailing = (state) => {
     return state.list.failed
 }
+// Curry Function
+export const selectQuizzesByTopic = (id) => {
+    return (state) => {
+        const filteredResult = state.list.quizzes.filter(object => object.topicId === id)
+        return filteredResult
+    }
+}
 
 // EXPORT
 export default listSlice.reducer;
