@@ -1,3 +1,9 @@
+@media only screen and (max-device-width: 550px) and (orientation: portrait) {
+    form input, select {
+        width: 65vw !important;
+        height: 9vw !important;
+    }
+}
 form {
     display: flex;
     flex-flow: column wrap;
@@ -9,7 +15,7 @@ form label {
     font-size: 2rem;
     margin-bottom: 0.5rem;
 }
-form input {
+form input, select {
     width: 40vw;
     height: 5vw;
     font-size: 1.3rem;
