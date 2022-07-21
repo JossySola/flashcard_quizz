@@ -52,7 +52,7 @@ export function QuizzForm() {
                 <form id='topicForm' onSubmit={e => setNewQuizz(e)}>
                     <label>Quizz name:</label>
                     { duplicate && <h4 style={{color: '#fc472e'}}>The quizz already exists.</h4> }
-                    <input type='text' placeholder="Enter topic" value={quizz} onChange={e => setQuizz(e.target.value)}></input>
+                    <input type='text' placeholder="Enter quizz name" value={quizz} onChange={e => setQuizz(e.target.value)}></input>
 
                     <label>Select a topic:</label>
                     <select id='selectTopic' name='selectTopic' defaultValue='default' onChange={e => setTopic(e.target.value)}>
