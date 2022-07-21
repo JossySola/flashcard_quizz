@@ -1,0 +1,28 @@
+form {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    align-items: center;
+
+}
+form label {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+form input {
+    width: 40vw;
+    height: 5vw;
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+form button {
+    height: fit-content;
+    width: fit-content;
+    font-size: 1.5rem;
+    background-color: #03a8d8;
+    color: white;
+    border: 2px solid #03a8d8;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 0.5rem;
+}

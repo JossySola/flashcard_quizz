@@ -67,6 +67,12 @@ export const listSlice = createSlice({
 export const selectList = (state) => {
     return state.list
 }
+export const selectTopics = (state) => {
+    return state.list.topics
+}
+export const selectQuizzes = (state) => {
+    return state.list.quizzes
+}
 export const isLoading = (state) => {
     return state.list.loading
 }
