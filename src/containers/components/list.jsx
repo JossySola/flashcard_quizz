@@ -57,8 +57,9 @@ export function List({from, topicId}) {
                                 </Link>
                                 <button aria-label="Remove list item" onClick={(e) => { e.preventDefault(); dispatch(deleteQuizz(item.id))}}>X</button>
                                 </li>
-                    }) : null 
+                    }) : null
                 }
+                { from === 'topic' && filteredByTopic.length === 0 ? <h3 style={{color: '#fc472e'}}>No quizzes in this topic yet</h3> : <div></div> }
                 {
                     from === 'quizzes' ? list[from].map((item, index) => {
                         return <li key={index} className='listItem' id={item.id}>

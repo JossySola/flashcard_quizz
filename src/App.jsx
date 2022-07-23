@@ -2,6 +2,7 @@ import React, { useEffect } from "react"
 import { Outlet, NavLink } from 'react-router-dom'
 import { useDispatch } from "react-redux"
 import { loadListAsync } from './containers/components/slices/listSlice'
+import { loadQuizzesAsync } from './containers/components/slices/quizzSlice'
 import './App.css'
 
 export default function App() {
@@ -9,6 +10,7 @@ export default function App() {
 
   useEffect(() => {
     dispatch(loadListAsync()) // Only for the first render, loads a default list located in a JSON file
+    dispatch(loadQuizzesAsync())
   }, [])
 
   return (

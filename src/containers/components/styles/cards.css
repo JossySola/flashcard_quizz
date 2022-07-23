@@ -1,0 +1,58 @@
+.cardContainer {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    align-items: center;
+}
+.cardNav {
+    min-width: 60vw;
+    height: fit-content;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+    font-size: 1.8rem;
+}
+.cardNav button {
+    background-color: blueviolet;
+    border: none;
+    border-radius: 5px;
+    width: 5rem;
+    height: 5rem;
+    font-size: 5rem;
+    cursor: pointer;
+}
+
+
+
+div .card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    width: 28rem;
+    height: 40rem;
+    cursor: pointer;
+}
+div .card span {
+    font-size: 3rem;
+    line-height: 3.2rem;
+    letter-spacing: 0.05rem;
+}
+
+div .front {
+    border: 1px solid #011c73;
+    background-color: #001047;
+    background-image: linear-gradient(160deg, #016bff, #277ff9, #001047 40%, #001047, #006aff);
+}
+
+div .back {
+    border: 1px solid #006e02;
+    background-color: #319b03;
+    background-image: linear-gradient(130deg, #36b102, #015603 50%, #35a705);
+    transition: background-image 1s ease-in-out;
+    -webkit-transition: background-image 1s ease-in-out;
+    -ms-transition: background-image 1s ease-in-out;
+}

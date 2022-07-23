@@ -15,9 +15,15 @@ form label {
     font-size: 2rem;
     margin-bottom: 0.5rem;
 }
-form input, select {
-    width: 40vw;
-    height: 5vw;
+form input {
+    min-width: 18.75rem;
+    min-height: 2.8125rem;
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+select {
+    min-width: 19.50rem;
+    min-height: 2.8125rem;
     font-size: 1.3rem;
     margin-bottom: 2rem;
 }
@@ -31,4 +37,21 @@ form button {
     border-radius: 4px;
     cursor: pointer;
     padding: 0.5rem;
+    margin: 1rem 0;
+    
+}
+.alert {
+    width: 15px;
+    height: 15px;
+    margin-left: 0.3rem;
+}
+.newCard {
+    height: fit-content;
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: column wrap;
+    color: #e9a802;
+    border-radius: 0;
+    border-top: 1px solid #868686;
+    padding: 1rem;
 }

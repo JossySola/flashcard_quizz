@@ -20,6 +20,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Provider store={store}>
         <Routes>
           <Route path='/' element={<App />}>
+            <Route path='*' element={<h1>Nothing found</h1>}/>
             <Route path='topics/new' element={<TopicForm />}/>
             <Route path='quizzes/new' element={<QuizzForm />}/>
 
@@ -28,9 +29,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
               <Route path='topic' element={<Outlet />}>
                 <Route path=':topicId' element={<Topic />}/>
               </Route>
-              <Route path=':quizzId' element={<Quizz />}/>
             </Route>
-            
+            <Route path='quizzes/:quizzId' element={<Quizz />}/>
           </Route>
         </Routes>
       </Provider>
