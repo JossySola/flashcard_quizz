@@ -16,24 +16,30 @@ import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <BrowserRouter>
-    
+    <React.StrictMode>
       <Provider store={store}>
         <Routes>
-          <Route path='/' element={<App />}>
+          <Route path='flashcard_quizz/' element={<App />}>
             <Route path='*' element={<h1>Nothing found</h1>}/>
             <Route path='topics/new' element={<TopicForm />}/>
             <Route path='quizzes/new' element={<QuizzForm />}/>
 
-            <Route path='topics' element={<Topics />} />
+            <Route path='topics' element={<Topics />} >
+              <Route path='topic' element={<Outlet />}>
+                <Route path=':topicId' element={<Topic />}/>
+              </Route>
+            </Route>
+
             <Route path='quizzes' element={<Quizzes />}>
               <Route path='topic' element={<Outlet />}>
                 <Route path=':topicId' element={<Topic />}/>
               </Route>
             </Route>
+            
             <Route path='quizzes/:quizzId' element={<Quizz />}/>
           </Route>
         </Routes>
       </Provider>
-    
+    </React.StrictMode>
   </BrowserRouter>
 )

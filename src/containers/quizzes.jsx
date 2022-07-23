@@ -8,7 +8,7 @@ export function Quizzes() {
         <div>
             <h1>Quizzes</h1>
             <div className="button">
-                <Link to='/quizzes/new'>New Quizz</Link>
+                <Link to='new'>New Quizz</Link>
             </div>
             <Outlet />
             <List from='quizzes'/>

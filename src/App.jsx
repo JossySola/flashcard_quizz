@@ -23,7 +23,7 @@ export default function App() {
               backgroundColor: isActive ? "#9830f9" : "",
             };
           }}
-          to='/topics'>Topics</NavLink></li>
+          to='topics'>Topics</NavLink></li>
 
           <li><NavLink
           style={({ isActive }) => {
@@ -31,7 +31,7 @@ export default function App() {
               backgroundColor: isActive ? "#9830f9" : "",
             };
           }}
-          to='/quizzes'>Quizzes</NavLink></li>
+          to='quizzes'>Quizzes</NavLink></li>
 
           <li><NavLink
           style={({ isActive }) => {
@@ -39,7 +39,7 @@ export default function App() {
               backgroundColor: isActive ? "#9830f9" : "",
             };
           }}
-          to='/quizzes/new'>New Quizz</NavLink></li>
+          to='quizzes/new'>New Quizz</NavLink></li>
         </ul>
       </nav>
 

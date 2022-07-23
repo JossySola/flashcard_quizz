@@ -10,7 +10,7 @@ export function Topics() {
             <h1>Topics</h1>
             <Outlet />
             <div className="button">
-                <Link to='/topics/new'>New Topic</Link>
+                <Link to='new'>New Topic</Link>
             </div>
             <List from='topics'/>
         </div>

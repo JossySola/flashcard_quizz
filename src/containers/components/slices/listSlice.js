@@ -4,7 +4,7 @@ import { createAsyncThunk, createSlice } from '@reduxjs/toolkit'
 export const loadListAsync = createAsyncThunk(
     'list/loadListAsync',
     async () => {
-        const response = await fetch('./src/data/data.json')
+        const response = await fetch('https://jossysola.github.io/defaultQuizzes/data/data.json')
         const json = await response.json()
         return json
     }

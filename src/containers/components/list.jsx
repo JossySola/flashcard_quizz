@@ -39,7 +39,7 @@ export function List({from, topicId}) {
                 {
                     from === 'topics' ? list[from].map((item, index) => {
                         return <li key={index} className='listItem' id={item.id}>
-                                <Link to={`/quizzes/topic/${item.id}`}>
+                                <Link to={`topic/${item.id}`}>
                                     <h3>{item.name}</h3>
                                     <p>by {item.author}</p>
                                 </Link>
@@ -50,7 +50,7 @@ export function List({from, topicId}) {
                 { 
                     from === 'topic' ? filteredByTopic.map((item, index) => {
                         return <li key={index} id={item.id} className='listItem' style={{border: '3px solid #892be29a'}}>
-                                <Link to={`/quizzes/${item.id}`}>
+                                <Link to={`/flashcard_quizz/quizzes/${item.id}`}>
                                     <h4>{item.name} Quizz</h4>
                                     <h5>From the {matchTopic(item.topicId) ? <span>{matchTopic(item.topicId) + ' topic'}</span> : <span style={{color: "#fc472e", fontSize: "1.2rem", fontStyle: "italic", fontWeight: "normal"}}>[ the topic was deleted ]</span>}</h5>
                                     <p>by {item.author}</p>
@@ -63,7 +63,7 @@ export function List({from, topicId}) {
                 {
                     from === 'quizzes' ? list[from].map((item, index) => {
                         return <li key={index} className='listItem' id={item.id}>
-                            <Link to={`/quizzes/${item.id}`}>
+                            <Link to={`${item.id}`}>
                                 <h4>{item.name} Quizz</h4>
                                 <h5>From the {matchTopic(item.topicId) ? <span>{matchTopic(item.topicId) + ' topic'}</span> : <span style={{color: "#fc472e", fontSize: "1.2rem", fontStyle: "italic", fontWeight: "normal"}}>[ the topic was deleted ]</span>}</h5>
                                 <p>by {item.author}</p>
